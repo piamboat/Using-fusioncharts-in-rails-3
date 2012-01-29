@@ -1,0 +1,6 @@
+#chartdiv{:align => "center"} The chart will appear within this DIV. This text will be replaced by the chart.
+:javascript
+  var myChart = new FusionCharts("../FusionCharts/Charts/FCF_MSLine.swf", "myChartId", "600", "500");
+  myChart.setDataXML("#{escape_javascript(@xmldata)}");
+
+  myChart.render("chartdiv");
